@@ -20,11 +20,6 @@
 # include <string.h>
 # include <unistd.h>
 
-int					ft_isalnum(int c);
-int					ft_isalpha(int c);
-int					ft_isascii(int c);
-int					ft_isdigit(int c);
-int					ft_isprint(int c);
 
 typedef struct s_list
 {
@@ -37,6 +32,7 @@ int					ft_isalpha(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
+int					ft_isspace(int c);
 
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstadd_front(t_list **lst, t_list *new);
@@ -85,6 +81,7 @@ char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+size_t 				ft_strsspace(char **str);
 
 void				ft_remchr(char *s, char *char_list);
 void				ft_strreplace(char *source, char *to_replace,

@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/01/29 01:42:02 by tlamit           ###   ########.fr        #
+#    Updated: 2026/03/04 17:10:29 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,8 @@ SRCS_IS = is/ft_isalnum.c \
 		  is/ft_isalpha.c \
 		  is/ft_isascii.c \
 		  is/ft_isdigit.c \
-		  is/ft_isprint.c
+		  is/ft_isprint.c \
+		  is/ft_isspace.c
 
 SRCS_LST = lst/ft_lstadd_back.c \
 		   lst/ft_lstadd_front.c \
@@ -84,7 +85,8 @@ SRCS_STR = str/ft_atoi.c \
 		   str/ft_tolower.c \
 		   str/ft_toupper.c \
 		   str/ft_remchr.c \
-		   str/ft_strreplace.c
+		   str/ft_strreplace.c \
+		   str/ft_strsspace.c
 
 
 SRCS = 	$(SRCS_READER) \
