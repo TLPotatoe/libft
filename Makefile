@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/03/04 17:10:29 by tlamit           ###   ########.fr        #
+#    Updated: 2026/03/10 18:54:58 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,7 +86,8 @@ SRCS_STR = str/ft_atoi.c \
 		   str/ft_toupper.c \
 		   str/ft_remchr.c \
 		   str/ft_strreplace.c \
-		   str/ft_strsspace.c
+		   str/ft_strsspace.c \
+		   str/ft_strsplit.c
 
 
 SRCS = 	$(SRCS_READER) \

@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:09:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/01/29 01:39:10 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/03/10 18:50:09 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-
 
 typedef struct s_list
 {
@@ -81,7 +80,8 @@ char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
-size_t 				ft_strsspace(char **str);
+size_t				ft_strsspace(char **str);
+char				**ft_strsplit(char const *s, char *str);
 
 void				ft_remchr(char *s, char *char_list);
 void				ft_strreplace(char *source, char *to_replace,

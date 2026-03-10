@@ -6,13 +6,13 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 16:51:57 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/04 17:01:29 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/03/10 19:04:45 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isspace(int c)
+int	ft_isspace(int c)
 {
 	if (c == 32 || (9 <= c && c <= 13))
 		return (1);
