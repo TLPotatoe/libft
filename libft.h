@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:09:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/10 18:50:09 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/03/11 19:58:14 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,14 @@ char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+
 size_t				ft_strsspace(char **str);
 char				**ft_strsplit(char const *s, char *str);
+char				*ft_strinsert(char *str, char *to_insert, size_t pos);
+char				*ft_strninsert(char *str, char *to_insert, size_t pos,
+						size_t n);
+char				*ft_strlinsert(char *str, char *to_insert, size_t pos,
+						size_t len);
 
 void				ft_remchr(char *s, char *char_list);
 void				ft_strreplace(char *source, char *to_replace,
