@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:24:31 by marvin            #+#    #+#             */
-/*   Updated: 2026/03/10 18:58:15 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/03/13 16:24:20 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,13 @@ char	**ft_checksplit_str(char **p, int n)
 	return (p);
 }
 
+/**
+ * @brief A fonction that splits a string based on multiple seperators.
+ *
+ * @param s The main string.
+ * @param str The seperators.
+ * @return A list of strings seperated.
+ */
 char	**ft_strsplit(char const *s, char *str)
 {
 	char	**p;
