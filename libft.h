@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:09:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/11 19:58:14 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/03/23 18:30:04 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ char				**ft_checksplit(char **p, int n);
 char				**ft_split(char const *s, char c);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *s);
+char				*ft_strndup(const char *s, size_t n);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 char				*ft_strjoin(char const *s1, char const *s2);
 unsigned int		get_result(char *dst, char *src, size_t size);
@@ -88,9 +89,18 @@ char				*ft_strninsert(char *str, char *to_insert, size_t pos,
 						size_t n);
 char				*ft_strlinsert(char *str, char *to_insert, size_t pos,
 						size_t len);
+char				*ft_strinsert(char *str, char *to_insert, size_t pos);
+char				*ft_strninsert(char *str, char *to_insert, size_t pos,
+						size_t n);
+char				**ft_listninsert(char **origin, size_t insert_p,
+						char *str, size_t n);
+char				*ft_strlinsert(char *str, char *to_insert, size_t pos,
+						size_t len);
 
 void				ft_remchr(char *s, char *char_list);
 void				ft_strreplace(char *source, char *to_replace,
 						char replace_by);
+
+size_t				ft_min(size_t a, size_t b);
 
 #endif

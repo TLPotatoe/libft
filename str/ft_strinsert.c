@@ -6,24 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 15:37:17 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/11 20:00:15 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/03/23 18:25:56 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/**
- * @brief Returns the minimum of two size_t values.
- * @param a The first value.
- * @param b The second value.
- * @return The smaller value between a and b.
- */
-static size_t	ft_min(size_t a, size_t b)
-{
-	if (a < b)
-		return (a);
-	return (b);
-}
 
 /**
  * @brief Inserts a string into another at a given position.
@@ -59,8 +46,8 @@ char	*ft_strinsert(char *str, char *to_insert, size_t pos)
 
 /**
 
-	* @brief Inserts up to n characters from a string into another
-	at a given position.
+	* @brief Inserts up to n characters from a string into
+	another at a given position.
  * @param str The original string.
  * @param to_insert The string to insert.
  * @param pos The index where the insertion begins.

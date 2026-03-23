@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/03/11 19:58:00 by tlamit           ###   ########.fr        #
+#    Updated: 2026/03/23 18:25:01 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,29 +66,30 @@ SRCS_PUT =		put/ft_putchar_fd.c \
 				put/ft_putnbr_fd.c \
 				put/ft_putstr_fd.c
 
-SRCS_STR = 		str/ft_atoi.c \
-				str/ft_itoa.c \
-				str/ft_split.c \
-				str/ft_strchr.c \
-				str/ft_strdup.c \
-				str/ft_striteri.c \
-				str/ft_strjoin.c \
-				str/ft_strlcat.c \
-				str/ft_strlcpy.c \
-				str/ft_strlen.c \
-				str/ft_strmapi.c \
-				str/ft_strncmp.c \
-				str/ft_strnstr.c \
-				str/ft_strrchr.c \
-				str/ft_strtrim.c \
-				str/ft_substr.c \
-				str/ft_tolower.c \
-				str/ft_toupper.c \
-				str/ft_remchr.c \
-				str/ft_strreplace.c \
-				str/ft_strsspace.c \
-				str/ft_strsplit.c \
-				str/ft_strinsert.c
+SRCS_STR = str/ft_atoi.c \
+		   str/ft_itoa.c \
+		   str/ft_split.c \
+		   str/ft_strchr.c \
+		   str/ft_strdup.c \
+		   str/ft_striteri.c \
+		   str/ft_strjoin.c \
+		   str/ft_strlcat.c \
+		   str/ft_strlcpy.c \
+		   str/ft_strlen.c \
+		   str/ft_strmapi.c \
+		   str/ft_strncmp.c \
+		   str/ft_strnstr.c \
+		   str/ft_strrchr.c \
+		   str/ft_strtrim.c \
+		   str/ft_substr.c \
+		   str/ft_tolower.c \
+		   str/ft_toupper.c \
+		   str/ft_remchr.c \
+		   str/ft_strreplace.c \
+		   str/ft_strsspace.c \
+		   str/ft_strsplit.c \
+		   str/ft_strinsert.c \
+		   str/ft_listinsert.c
 
 
 SRCS = 	$(SRCS_READER) \
