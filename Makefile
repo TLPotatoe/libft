@@ -22,7 +22,7 @@ else
 	CFLAGS = -g $(HEADER)
 endif
 
-SRCS_READER = reader/reader.c
+SRCS_READER = 	reader/reader.c
 
 SRCS_GNL =		get_next_line/get_next_line.c \
 				get_next_line/get_next_line_utils.c
@@ -66,41 +66,42 @@ SRCS_PUT =		put/ft_putchar_fd.c \
 				put/ft_putnbr_fd.c \
 				put/ft_putstr_fd.c
 
-SRCS_STR = str/ft_atoi.c \
-		   str/ft_itoa.c \
-		   str/ft_split.c \
-		   str/ft_strchr.c \
-		   str/ft_strdup.c \
-		   str/ft_striteri.c \
-		   str/ft_strjoin.c \
-		   str/ft_strlcat.c \
-		   str/ft_strlcpy.c \
-		   str/ft_strlen.c \
-		   str/ft_strmapi.c \
-		   str/ft_strncmp.c \
-		   str/ft_strnstr.c \
-		   str/ft_strrchr.c \
-		   str/ft_strtrim.c \
-		   str/ft_substr.c \
-		   str/ft_tolower.c \
-		   str/ft_toupper.c \
-		   str/ft_remchr.c \
-		   str/ft_strreplace.c \
-		   str/ft_strsspace.c \
-		   str/ft_strsplit.c \
-		   str/ft_strinsert.c \
-		   str/ft_listinsert.c
+SRCS_STR =		str/ft_atoi.c \
+				str/ft_itoa.c \
+				str/ft_split.c \
+				str/ft_strchr.c \
+				str/ft_strdup.c \
+				str/ft_striteri.c \
+				str/ft_strjoin.c \
+				str/ft_strlcat.c \
+				str/ft_strlcpy.c \
+				str/ft_strlen.c \
+				str/ft_strmapi.c \
+				str/ft_strncmp.c \
+				str/ft_strnstr.c \
+				str/ft_strrchr.c \
+				str/ft_strtrim.c \
+				str/ft_substr.c \
+				str/ft_tolower.c \
+				str/ft_toupper.c \
+				str/ft_remchr.c \
+				str/ft_strreplace.c \
+				str/ft_strsspace.c \
+				str/ft_strsplit.c \
+				str/ft_strinsert.c \
+				str/ft_listinsert.c
 
+SRCS_MATH = 	math/ft_min.c
 
-SRCS = 	$(SRCS_READER) \
-		$(SRCS_GNL) \
-		$(SRCS_PRINTF) \
-		$(SRCS_IS) \
-		$(SRCS_LST) \
-		$(SRCS_MEM) \
-		$(SRCS_PUT) \
-		$(SRCS_STR)
-
+SRCS = 			$(SRCS_READER) \
+				$(SRCS_GNL) \
+				$(SRCS_PRINTF) \
+				$(SRCS_IS) \
+				$(SRCS_LST) \
+				$(SRCS_MEM) \
+				$(SRCS_PUT) \
+				$(SRCS_STR) \
+				$(SRCS_MATH)
 
 OBJS = $(SRCS:.c=.o)
 
@@ -110,7 +111,7 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 %.o : %.c
-	@$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
