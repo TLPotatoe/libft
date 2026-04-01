@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/04/01 17:54:41 by tlamit           ###   ########.fr        #
+#    Updated: 2026/04/01 18:11:40 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,6 @@ HEADER :=	-I . \
 			-I $(DIR_GNL) \
 			-I $(DIR_IS) \
 			-I $(DIR_LST) \
-			-I $(DIR_MATH) \
 			-I $(DIR_MATH) \
 			-I $(DIR_MEM) \
 			-I $(DIR_POINTER) \
@@ -124,7 +123,7 @@ SRCS_STR :=		$(DIR_STR)/ft_atoi.c \
 				$(DIR_STR)/ft_strinsert.c
 
 
-SRCS :=			$(DIR_STRARR)/ft_newstrarrayinsert.c \
+SRCS_STRARR :=	$(DIR_STRARR)/ft_newstrarrayinsert.c \
 				$(DIR_STRARR)/ft_strarraydup.c \
 				$(DIR_STRARR)/ft_strarrayinsert.c
 
@@ -138,7 +137,8 @@ SRCS := 		$(SRCS_ARRAY) \
 				$(SRCS_POINTER) \
 				$(SRCS_PUT) \
 				$(SRCS_READER) \
-				$(SRCS_STR)
+				$(SRCS_STR) \
+				$(SRCS_STRARR)
 
 
 OBJS := $(SRCS:.c=.o)

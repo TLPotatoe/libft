@@ -6,13 +6,16 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:47:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:48:57 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 18:10:37 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_STRARRAY_H
 # define FT_STRARRAY_H
 
+# include "../str/ft_str.h"
+# include "../array/ft_array.h"
+# include "../pointer/pointer.h"
 # include <unistd.h>
 
 /**
@@ -55,7 +58,7 @@ char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str,
  * @param  str       The string to duplicate and insert.
  * @return void
  */
-void	ft_listinsert(char ***origin, size_t insert_p, char *str);
+void	ft_strarrayinsert(char ***origin, size_t insert_p, char *str);
 
 /**
  * @brief  Inserts a duplicated string (up to n chars) into a string array
@@ -67,6 +70,6 @@ void	ft_listinsert(char ***origin, size_t insert_p, char *str);
  * @param  n         Maximum number of characters to copy from str.
  * @return void
  */
-void	ft_listninsert(char ***origin, size_t insert_p, char *str, size_t n);
+void	ft_strarrayninsert(char ***origin, size_t insert_p, char *str, size_t n);
 
 #endif // !FT_STRARRAY_H

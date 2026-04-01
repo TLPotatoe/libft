@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/23 15:50:44 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:49:10 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 18:07:48 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str,
 	size_t	len;
 	char	flag;
 
-	len = ft_listlen(origin) + 1;
+	len = ft_arraylen((void **)origin) + 1;
 	insert_p = ft_min(insert_p, len - 1);
 	new_origin = malloc(sizeof(char *) * (len + 1));
 	if (!new_origin)
