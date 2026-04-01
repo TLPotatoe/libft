@@ -6,13 +6,13 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:30:37 by tlamit            #+#    #+#             */
-/*   Updated: 2026/01/19 16:40:25 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 15:58:12 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	get_result(char *dst, char *src, size_t size)
+static unsigned int	get_result(char *dst, char *src, size_t size)
 {
 	int		i;
 	size_t	j;

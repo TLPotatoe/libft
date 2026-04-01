@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 15:00:30 by tlamit            #+#    #+#             */
-/*   Updated: 2025/11/20 18:11:42 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:17:40 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,33 @@
 # include <string.h>
 # include <unistd.h>
 
+
+/**
+ * @brief  Formats and writes a string to standard output, handling
+ *         the following conversion specifiers:
+ *         %c  - character
+ *         %s  - string
+ *         %p  - pointer address
+ *         %d  - decimal integer
+ *         %i  - integer
+ *         %u  - unsigned integer
+ *         %x  - hexadecimal (lowercase)
+ *         %X  - hexadecimal (uppercase)
+ *         %%  - literal percent sign
+ *
+ * @param  str  The format string containing text and conversion specifiers.
+ * @param  ...  Variadic arguments matching the conversion specifiers.
+ *
+ * @return The total number of characters written,
+ *         or -1 if a write error occurs.
+ */
+int		ft_printf(const char *str, ...);
+
 size_t	printf_ft_strlen(const char *s);
 void	printf_ft_putnbr_fd(int n, int fd, int *i);
 int		count_args_n(const char *s);
 void	printf_ft_putstr_fd(char *s, int fd, int *i);
 void	printf_ft_putchar_fd(char c, int fd, int *i);
-int		ft_printf(const char *str, ...) __attribute__((format(printf, 1, 2)));
 char	*printf_ft_strchr(const char *s, int c);
 int		get_perfect_len(const char *str);
 void	ft_putlongnbr_fd(long int n, int fd, int *i);

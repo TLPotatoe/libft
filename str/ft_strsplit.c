@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:24:31 by marvin            #+#    #+#             */
-/*   Updated: 2026/03/13 16:24:20 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 15:59:47 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	seen_words(const char c, const char *str)
 	return (seen[(int)c]);
 }
 
-int	count_words_str(char const *s, const char *str)
+static int	count_words_str(char const *s, const char *str)
 {
 	int	word;
 	int	flag;
@@ -54,7 +54,7 @@ int	count_words_str(char const *s, const char *str)
 	return (word);
 }
 
-char	**ft_checksplit_str(char **p, int n)
+static char	**ft_checksplit_str(char **p, int n)
 {
 	int	i;
 
@@ -74,13 +74,7 @@ char	**ft_checksplit_str(char **p, int n)
 	return (p);
 }
 
-/**
- * @brief A fonction that splits a string based on multiple seperators.
- *
- * @param s The main string.
- * @param str The seperators.
- * @return A list of strings seperated.
- */
+
 char	**ft_strsplit(char const *s, char *str)
 {
 	char	**p;

@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 20:52:14 by tlamit            #+#    #+#             */
-/*   Updated: 2026/01/20 14:29:23 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:09:42 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,10 @@ static int	reader(int fd, char **tbuff)
 {
 	int	len;
 
-	*tbuff = malloc(BUFFER_SIZE + 1);
+	*tbuff = malloc(GNL_BUFFER_SIZE_B + 1);
 	if (!*tbuff)
 		return (-1);
-	len = read(fd, *tbuff, BUFFER_SIZE);
+	len = read(fd, *tbuff, GNL_BUFFER_SIZE_B);
 	return (len);
 }
 

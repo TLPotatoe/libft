@@ -12,29 +12,7 @@
 
 #include "libft.h"
 
-/**
- * @brief Calculates the length of a NULL-terminated string array.
- * @param origin The string array to measure.
- * @return The number of strings in the array.
- */
-size_t	ft_listlen(char **origin)
-{
-	size_t	len;
-
-	len = 0;
-	while (origin && origin[len])
-		len++;
-	return (len);
-}
-
-/**
- * @brief Creates a new string array with a duplicated string inserted.
- * @param origin The original string array. Can be NULL.
- * @param insert_p The index where the string will be inserted.
- * @param str The string to duplicate and insert.
- * @return A newly allocated string array, or NULL if allocation fails.
- */
-char	**ft_listinsert(char **origin, size_t insert_p, char *str)
+char	**ft_newstrarrayinsert(char **origin, size_t insert_p, char *str)
 {
 	char	**new_origine;
 	size_t	len;
@@ -42,21 +20,12 @@ char	**ft_listinsert(char **origin, size_t insert_p, char *str)
 	if (!str)
 		return (NULL);
 	len = ft_strlen(str);
-	new_origine = ft_listninsert(origin, insert_p, str, len);
+	new_origine = ft_newstrarrayninsert(origin, insert_p, str, len);
 	return (new_origine);
 }
 
-/**
 
-	* @brief Creates a new string array with a duplicated string
-	(up to n chars) inserted.
- * @param origin The original string array. Can be NULL.
- * @param insert_p The index where the string will be inserted.
- * @param str The string to duplicate and insert.
- * @param n The maximum number of characters to copy from str.
- * @return A newly allocated string array, or NULL if allocation fails.
- */
-char	**ft_listninsert(char **origin, size_t insert_p, char *str, size_t n)
+char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str, size_t n)
 {
 	char	**new_origin;
 	size_t	index;

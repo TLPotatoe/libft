@@ -6,20 +6,12 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 15:37:17 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/23 18:25:56 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 15:57:45 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief Inserts a string into another at a given position.
- * @param str The original string.
- * @param to_insert The string to insert.
- * @param pos The index where the insertion begins.
- * @return A newly allocated string with the inserted characters,
-	or NULL on failure.
- */
 char	*ft_strinsert(char *str, char *to_insert, size_t pos)
 {
 	char	*ret;
@@ -44,17 +36,7 @@ char	*ft_strinsert(char *str, char *to_insert, size_t pos)
 	return (ret);
 }
 
-/**
 
-	* @brief Inserts up to n characters from a string into
-	another at a given position.
- * @param str The original string.
- * @param to_insert The string to insert.
- * @param pos The index where the insertion begins.
- * @param n The maximum number of bytes to insert from to_insert.
- * @return A newly allocated string with the inserted characters,
-	or NULL on failure.
- */
 char	*ft_strninsert(char *str, char *to_insert, size_t pos, size_t n)
 {
 	char	*ret;
@@ -78,17 +60,6 @@ char	*ft_strninsert(char *str, char *to_insert, size_t pos, size_t n)
 	return (ret);
 }
 
-/**
- * @brief Inserts a string into another at a given position,
-	bounded by a maximum total length.
- * @param str The original string.
- * @param to_insert The string to insert.
- * @param pos The index where the insertion begins.
-
-	* @param len The maximum total length of the resulting string
-	(excluding the null terminator).
- * @return A newly allocated string bounded by len, or NULL on failure.
- */
 char	*ft_strlinsert(char *str, char *to_insert, size_t pos, size_t len)
 {
 	char	*ret;

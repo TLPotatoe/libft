@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:43:22 by tlamit            #+#    #+#             */
-/*   Updated: 2026/01/20 14:59:16 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:05:48 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ char	*ft_get_raw_file(char *filename)
 	line = NULL;
 	while (1)
 	{
-		buffer = malloc(BUFFER_SIZE + 1);
+		buffer = malloc(RAW_BUFFER_SIZE + 1);
 		if (!buffer)
 			free_buff_line(&line, &buffer);
-		len = read(fd, buffer, BUFFER_SIZE);
+		len = read(fd, buffer, RAW_BUFFER_SIZE);
 		if (!len)
 			break ;
 		buffer[len] = 0;

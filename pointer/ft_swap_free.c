@@ -1,23 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_swap_free.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 14:24:40 by tlamit            #+#    #+#             */
-/*   Updated: 2025/11/20 18:03:33 by tlamit           ###   ########.fr       */
+/*   Created: 2026/04/01 15:43:05 by tlamit            #+#    #+#             */
+/*   Updated: 2026/04/01 16:16:39 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-size_t	printf_ft_strlen(const char *s)
+void	ft_swap_free(void **origin, void *new)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	free(*origin);
+	*origin = new;
 }

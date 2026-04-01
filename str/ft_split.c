@@ -6,14 +6,14 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:24:31 by marvin            #+#    #+#             */
-/*   Updated: 2026/01/19 16:41:39 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 15:55:58 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "stdio.h"
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	word;
 	int	flag;
@@ -42,7 +42,7 @@ int	count_words(char const *s, char c)
 	return (word);
 }
 
-char	**ft_checksplit(char **p, int n)
+static char	**ft_checksplit(char **p, int n)
 {
 	int	i;
 

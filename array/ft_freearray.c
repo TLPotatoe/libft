@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_freearray.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 14:35:13 by tlamit            #+#    #+#             */
-/*   Updated: 2025/11/20 18:03:37 by tlamit           ###   ########.fr       */
+/*   Created: 2026/04/01 15:34:57 by tlamit            #+#    #+#             */
+/*   Updated: 2026/04/01 16:34:51 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-char	*printf_ft_strchr(const char *s, int c)
+void	ft_free_array(void **array)
 {
-	while (*s)
-	{
-		if (*s == (unsigned char)(c))
-			return ((char *)s);
-		s++;
-	}
-	if (*s == (unsigned char)(c))
-		return ((char *)s);
-	return (NULL);
+	size_t	i;
+
+	i = 0;
+	while (array[i])
+		free(array[i++]);
+	free(array);
 }

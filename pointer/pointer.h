@@ -1,35 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   pointer.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/16 11:04:18 by tlamit            #+#    #+#             */
-/*   Updated: 2025/11/20 18:03:35 by tlamit           ###   ########.fr       */
+/*   Created: 2026/04/01 15:51:36 by tlamit            #+#    #+#             */
+/*   Updated: 2026/04/01 16:17:01 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef POINTER_H
+# define POINTER_H
 
-size_t	printf_ft_strlcpy(char *dst, const char *src, size_t size)
-{
-	size_t	i;
-	size_t	res;
+/**
+ * @brief  Frees the pointer referenced by origin and replaces it with new.
+ * @param  origin  Address of the pointer to free and reassign.
+ * @param  new     New pointer to assign to *origin.
+ * @return void
+ */
+void	ft_swap_free(void **origin, void *new);
 
-	i = 0;
-	while (src[i])
-		i++;
-	if (!size)
-		return (i);
-	size--;
-	res = i;
-	i = 0;
-	while (i < size && src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (res);
-}
+#endif // !POINTER_H

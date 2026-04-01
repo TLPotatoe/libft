@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strreplace.c                                    :+:      :+:    :+:   */
+/*   ft_arraylen.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 01:28:03 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 15:59:17 by tlamit           ###   ########.fr       */
+/*   Created: 2026/04/01 15:22:27 by tlamit            #+#    #+#             */
+/*   Updated: 2026/04/01 16:34:20 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strreplace(char *source, char *to_replace, char replace_by)
+size_t	ft_arraylen(void **origin)
 {
-	char	seen[256];
+	size_t	len;
 
-	if (!source || !to_replace)
-		return ;
-	ft_memset(seen, 0, sizeof seen);
-	while (*to_replace)
-		seen[(int)*(to_replace++)] = 1;
-	while (*source)
-	{
-		if (seen[(int)(*source)])
-			*source = replace_by;
-		source++;
-	}
+	len = 0;
+	while (origin && origin[len])
+		len++;
+	return (len);
 }

@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 20:52:24 by tlamit            #+#    #+#             */
-/*   Updated: 2026/01/20 14:29:35 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:08:47 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1024
+# ifndef GNL_BUFFER_SIZE
+#  define GNL_BUFFER_SIZE 1024
 # endif
 
 char	*get_next_line(int fd);

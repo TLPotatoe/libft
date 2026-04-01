@@ -6,13 +6,13 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 16:02:24 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/22 18:39:57 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 15:54:39 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	get_size_m(int nb)
+static int	get_size_m(int nb)
 {
 	int	i;
 	int	sign;
