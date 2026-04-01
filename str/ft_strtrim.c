@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 12:39:55 by marvin            #+#    #+#             */
-/*   Updated: 2025/10/22 18:29:14 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:59 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

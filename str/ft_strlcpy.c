@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:04:18 by tlamit            #+#    #+#             */
-/*   Updated: 2026/01/19 16:40:32 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:41 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

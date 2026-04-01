@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 16:58:04 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/13 16:15:17 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:57 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 /**
  * @brief A function that skips spaces in a string.

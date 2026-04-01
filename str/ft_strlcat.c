@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:30:37 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 15:58:12 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:39 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 static unsigned int	get_result(char *dst, char *src, size_t size)
 {

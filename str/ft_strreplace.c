@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/29 01:28:03 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 15:59:17 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:50 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 void	ft_strreplace(char *source, char *to_replace, char replace_by)
 {

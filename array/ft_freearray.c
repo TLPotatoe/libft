@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:34:57 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:34:51 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:42:29 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_array.h"
 
 void	ft_free_array(void **array)
 {

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_listinsert.c                                    :+:      :+:    :+:   */
+/*   ft_strarrayinsert.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/23 15:50:44 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/23 16:57:57 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:52:00 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_strarray.h"
 
-void ft_listinsert(char ***origin, size_t insert_p, char *str)
+void	ft_listinsert(char ***origin, size_t insert_p, char *str)
 {
 	size_t	len;
 
@@ -22,7 +22,7 @@ void ft_listinsert(char ***origin, size_t insert_p, char *str)
 	ft_listninsert(origin, insert_p, str, len);
 }
 
-void ft_listninsert(char ***origin, size_t insert_p, char *str, size_t n)
+void	ft_listninsert(char ***origin, size_t insert_p, char *str, size_t n)
 {
 	char	**new_origin;
 	size_t	index;
@@ -48,6 +48,5 @@ void ft_listninsert(char ***origin, size_t insert_p, char *str, size_t n)
 			new_origin[index + flag] = (*origin)[index];
 		index++;
 	}
-	free(*origin);
-	*origin = new_origin;
+	ft_swap_free((void **)origin, new_origin);
 }

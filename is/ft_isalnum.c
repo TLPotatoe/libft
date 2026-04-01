@@ -6,11 +6,9 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:26:10 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/22 17:48:39 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:42:55 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalnum(int c)
 {

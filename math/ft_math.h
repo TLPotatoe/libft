@@ -13,7 +13,7 @@
 #ifndef FT_MATH_H
 # define FT_MATH_H
 
-#include <unistd.h>
+# include <unistd.h>
 
 /**
  * @brief Returns the minimum of two size_t values.

@@ -6,11 +6,9 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:10:56 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/15 11:36:41 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:43:26 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {

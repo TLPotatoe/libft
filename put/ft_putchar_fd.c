@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 17:20:22 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/21 22:00:06 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:44:47 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_put.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

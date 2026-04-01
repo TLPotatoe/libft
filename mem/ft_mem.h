@@ -13,7 +13,7 @@
 #ifndef FT_MEM_H
 # define FT_MEM_H
 
-#include <unistd.h>
+# include <unistd.h>
 
 /**
  * @brief  Sets n bytes of memory at address s to zero.
@@ -59,7 +59,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
  *
  * @return Negative if s1 < s2, zero if equal, positive if s1 > s2.
  */
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 /**
  * @brief  Copies n bytes from memory area src to memory area dest.

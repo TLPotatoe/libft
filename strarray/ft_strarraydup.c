@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:18:08 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 15:50:18 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:49:06 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_strarray.h"
 
 char	**ft_strarraydup(char **tabstr)
 {

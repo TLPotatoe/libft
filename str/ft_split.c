@@ -6,12 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:24:31 by marvin            #+#    #+#             */
-/*   Updated: 2026/04/01 15:55:58 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:26 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "stdio.h"
+#include "ft_str.h"
 
 static int	count_words(char const *s, char c)
 {

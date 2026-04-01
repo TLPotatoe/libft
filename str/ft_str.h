@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #ifndef FT_STR_H
 # define FT_STR_H
 
@@ -23,7 +22,7 @@
  *
  * @return The integer value represented by the string.
  */
-int	ft_atoi(const char *nptr);
+int		ft_atoi(const char *nptr);
 
 /**
  * @brief  Converts an integer to a newly allocated string.
@@ -203,7 +202,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
  *
  * @return Negative if s1 < s2, zero if equal, positive if s1 > s2.
  */
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 /**
  * @brief  Locates the first occurrence of little within the first len

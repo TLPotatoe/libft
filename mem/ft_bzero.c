@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:19:29 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/22 15:54:19 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:44:05 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
 
 void	ft_bzero(void *s, size_t n)
 {

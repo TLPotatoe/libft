@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strarray.h                                         :+:      :+:    :+:   */
+/*   ft_strarray.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:47:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 15:50:44 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:48:57 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_STRARRAY_H
+# define FT_STRARRAY_H
 
-#ifndef STRARRAY_H
-# define STRARRAY_H
-
+# include <unistd.h>
 
 /**
  * @brief  Duplicates a NULL-terminated array of strings.
@@ -45,7 +44,8 @@ char	**ft_newstrarrayinsert(char **origin, size_t insert_p, char *str);
  * @param n The maximum number of characters to copy from str.
  * @return A newly allocated string array, or NULL if allocation fails.
  */
-char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str, size_t n);
+char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str,
+			size_t n);
 
 /**
  * @brief  Inserts a duplicated string into a string array at a given index,
@@ -55,8 +55,7 @@ char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str, size_t n
  * @param  str       The string to duplicate and insert.
  * @return void
  */
-void ft_listinsert(char ***origin, size_t insert_p, char *str);
-
+void	ft_listinsert(char ***origin, size_t insert_p, char *str);
 
 /**
  * @brief  Inserts a duplicated string (up to n chars) into a string array
@@ -68,6 +67,6 @@ void ft_listinsert(char ***origin, size_t insert_p, char *str);
  * @param  n         Maximum number of characters to copy from str.
  * @return void
  */
-void ft_listninsert(char ***origin, size_t insert_p, char *str, size_t n);
+void	ft_listninsert(char ***origin, size_t insert_p, char *str, size_t n);
 
-#endif // !STRARRAY_H
+#endif // !FT_STRARRAY_H

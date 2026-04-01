@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 16:49:00 by tlamit            #+#    #+#             */
-/*   Updated: 2026/01/20 18:19:02 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:09 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 void	ft_remchr(char *s, char *char_list)
 {

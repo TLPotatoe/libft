@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:45:54 by tlamit            #+#    #+#             */
-/*   Updated: 2026/01/19 16:37:05 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:03 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 int	ft_atoi(const char *nptr)
 {

@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 15:37:17 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 15:57:45 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:34 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 char	*ft_strinsert(char *str, char *to_insert, size_t pos)
 {
@@ -35,7 +35,6 @@ char	*ft_strinsert(char *str, char *to_insert, size_t pos)
 	ft_memcpy(ret + pos + len_insert, str + pos, len_str - pos + 1);
 	return (ret);
 }
-
 
 char	*ft_strninsert(char *str, char *to_insert, size_t pos, size_t n)
 {

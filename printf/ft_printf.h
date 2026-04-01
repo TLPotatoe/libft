@@ -18,7 +18,6 @@
 # include <string.h>
 # include <unistd.h>
 
-
 /**
  * @brief  Formats and writes a string to standard output, handling
  *         the following conversion specifiers:

@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:40:42 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/16 14:44:42 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:44:17 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

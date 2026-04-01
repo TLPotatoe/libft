@@ -6,11 +6,9 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:14:25 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/22 17:48:05 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:43:26 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {

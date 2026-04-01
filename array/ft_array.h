@@ -13,7 +13,7 @@
 #ifndef FT_ARRAY_H
 # define FT_ARRAY_H
 
-#include <unistd.h>
+# include <unistd.h>
 
 /**
  * @brief Calculates the length of a NULL-terminated pointers array.
@@ -24,7 +24,8 @@ size_t	ft_arraylen(void **origin);
 
 /**
  * @brief  Frees a NULL-terminated array of pointers and the array itself.
- *         Iterates through each element, frees it, then frees the array pointer.
+ *         Iterates through each element, frees it,
+	then frees the array pointer.
  * @param  array  Array of pointers to free, terminated by a NULL pointer.
  * @return void
  */

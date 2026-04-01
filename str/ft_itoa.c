@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 16:02:24 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 15:54:39 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:07 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 static int	get_size_m(int nb)
 {

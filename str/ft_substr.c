@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 15:03:24 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/22 15:49:50 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:47:01 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

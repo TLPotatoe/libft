@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:46:13 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/22 18:04:39 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:44:12 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

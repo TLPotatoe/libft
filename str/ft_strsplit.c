@@ -6,12 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:24:31 by marvin            #+#    #+#             */
-/*   Updated: 2026/04/01 15:59:47 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:55 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "stdio.h"
+#include "ft_str.h"
 
 static int	seen_words(const char c, const char *str)
 {
@@ -73,7 +72,6 @@ static char	**ft_checksplit_str(char **p, int n)
 	}
 	return (p);
 }
-
 
 char	**ft_strsplit(char const *s, char *str)
 {

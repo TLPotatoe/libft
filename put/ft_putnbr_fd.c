@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 17:30:08 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/22 19:12:37 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:44:53 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_put.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

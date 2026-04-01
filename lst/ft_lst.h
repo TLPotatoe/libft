@@ -13,7 +13,7 @@
 #ifndef FT_LST_H
 # define FT_LST_H
 
-#include <unistd.h>
+# include <unistd.h>
 
 /**
  * @brief  Singly linked list node.
@@ -35,7 +35,7 @@ typedef struct s_list
  *
  * @return void
  */
-void	ft_lstadd_back(t_list **lst, t_list *new);
+void				ft_lstadd_back(t_list **lst, t_list *new);
 
 /**
  * @brief  Prepends a node to the beginning of the list.
@@ -45,7 +45,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
  *
  * @return void
  */
-void	ft_lstadd_front(t_list **lst, t_list *new);
+void				ft_lstadd_front(t_list **lst, t_list *new);
 
 /**
  * @brief  Deletes and frees all nodes of the list using del on each content,
@@ -56,7 +56,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
  *
  * @return void
  */
-void	ft_lstclear(t_list **lst, void (*del)(void *));
+void				ft_lstclear(t_list **lst, void (*del)(void *));
 
 /**
  * @brief  Deletes and frees a single node using del on its content.
@@ -67,7 +67,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
  *
  * @return void
  */
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
+void				ft_lstdelone(t_list *lst, void (*del)(void *));
 
 /**
  * @brief  Applies function f to the content of each node in the list.
@@ -77,7 +77,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
  *
  * @return void
  */
-void	ft_lstiter(t_list *lst, void (*f)(void *));
+void				ft_lstiter(t_list *lst, void (*f)(void *));
 
 /**
  * @brief  Returns a pointer to the last node of the list.
@@ -86,7 +86,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
  *
  * @return A pointer to the last node, or NULL if the list is empty.
  */
-t_list	*ft_lstlast(t_list *lst);
+t_list				*ft_lstlast(t_list *lst);
 
 /**
  * @brief  Creates a new list by applying f to each node's content.
@@ -98,7 +98,8 @@ t_list	*ft_lstlast(t_list *lst);
  *
  * @return A pointer to the first node of the new list, or NULL on failure.
  */
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
+						void (*del)(void *));
 
 /**
  * @brief  Allocates and returns a new node with the given content.
@@ -108,7 +109,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
  *
  * @return A pointer to the newly created node, or NULL on failure.
  */
-t_list	*ft_lstnew(void *content);
+t_list				*ft_lstnew(void *content);
 
 /**
  * @brief  Counts the number of nodes in the list.
@@ -117,6 +118,6 @@ t_list	*ft_lstnew(void *content);
  *
  * @return The number of nodes in the list.
  */
-int	ft_lstsize(t_list *lst);
+int					ft_lstsize(t_list *lst);
 
 #endif // !FT_LST_H

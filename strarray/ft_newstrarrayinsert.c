@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_listinsert.c                                    :+:      :+:    :+:   */
+/*   ft_newstrarrayinsert.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/23 15:50:44 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/23 16:57:57 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:49:10 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_strarray.h" 
+
 
 char	**ft_newstrarrayinsert(char **origin, size_t insert_p, char *str)
 {
@@ -24,8 +25,8 @@ char	**ft_newstrarrayinsert(char **origin, size_t insert_p, char *str)
 	return (new_origine);
 }
 
-
-char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str, size_t n)
+char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str,
+		size_t n)
 {
 	char	**new_origin;
 	size_t	index;

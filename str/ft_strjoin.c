@@ -6,11 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 14:23:09 by tlamit            #+#    #+#             */
-/*   Updated: 2025/10/22 15:49:07 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 16:46:37 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
