@@ -6,12 +6,15 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 16:11:14 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:12:29 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:20:25 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PUT_H
 # define FT_PUT_H
+
+#include <unistd.h>
+#include "../str/ft_str.h"
 
 /**
  * @brief  Writes a single character to the given file descriptor.

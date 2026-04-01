@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 16:33:53 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:34:43 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:17:20 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_ARRAY_H
 
 # include <unistd.h>
+# include <stdlib.h>
 
 /**
  * @brief Calculates the length of a NULL-terminated pointers array.

@@ -6,14 +6,18 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:53:51 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:38:20 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:22:40 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_STR_H
 # define FT_STR_H
 
+# include "../is/ft_is.h"
+# include "../mem/ft_mem.h"
+# include "../math/ft_math.h"
 # include <unistd.h>
+# include <stdlib.h>
 
 /**
  * @brief  Converts a string to an integer.

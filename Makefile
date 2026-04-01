@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/03/23 18:25:01 by tlamit           ###   ########.fr        #
+#    Updated: 2026/04/01 17:25:06 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,88 +22,115 @@ else
 	CFLAGS = -g $(HEADER)
 endif
 
-SRCS_READER = 	reader/reader.c
+DIR_ARRAY		:= array
+DIR_FTPRINTF	:= ft_printf
+DIR_GNL			:= get_next_line
+DIR_IS			:= is
+DIR_LST			:= lst
+DIR_MATH		:= math
+DIR_MEM			:= mem
+DIR_POINTER		:= pointer
+DIR_PUT			:= put
+DIR_READER		:= reader
+DIR_STR			:= str
+DIR_STRARR		:= strarray
 
-SRCS_GNL =		get_next_line/get_next_line.c \
-				get_next_line/get_next_line_utils.c
-
-SRCS_PRINTF =	ft_printf/ft_printf.c \
-				ft_printf/ft_printf_utils.c \
-				ft_printf/ft_strchr.c \
-				ft_printf/ft_strlcpy.c \
-				ft_printf/ft_strlen.c \
-				ft_printf/ft_substr.c \
-				ft_printf/put_any_fd.c
-
-SRCS_IS =		is/ft_isalnum.c \
-				is/ft_isalpha.c \
-				is/ft_isascii.c \
-				is/ft_isdigit.c \
-				is/ft_isprint.c \
-				is/ft_isspace.c
-
-SRCS_LST =		lst/ft_lstadd_back.c \
-				lst/ft_lstadd_front.c \
-				lst/ft_lstclear.c \
-				lst/ft_lstdelone.c \
-				lst/ft_lstiter.c \
-				lst/ft_lstlast.c \
-				lst/ft_lstmap.c \
-				lst/ft_lstnew.c \
-				lst/ft_lstsize.c
-
-SRCS_MEM =		mem/ft_bzero.c \
-				mem/ft_calloc.c \
-				mem/ft_memchr.c \
-				mem/ft_memcmp.c \
-				mem/ft_memcpy.c \
-				mem/ft_memmove.c \
-				mem/ft_memset.c
+SRCS_ARRAY :=	$(DIR_ARRAY)/ft_arraylen.c \
+				$(DIR_ARRAY)/ft_freearray.c
 
 
-SRCS_PUT =		put/ft_putchar_fd.c \
-				put/ft_putendl_fd.c \
-				put/ft_putnbr_fd.c \
-				put/ft_putstr_fd.c
+SRCS_PRINTF :=	$(DIR_FTPRINTF)/ft_printf.c \
+				$(DIR_FTPRINTF)/ft_printf_utils.c \
+				$(DIR_FTPRINTF)/ft_strchr.c \
+				$(DIR_FTPRINTF)/ft_strlcpy.c \
+				$(DIR_FTPRINTF)/ft_strlen.c \
+				$(DIR_FTPRINTF)/ft_substr.c \
+				$(DIR_FTPRINTF)/put_any_fd.c
 
-SRCS_STR =		str/ft_atoi.c \
-				str/ft_itoa.c \
-				str/ft_split.c \
-				str/ft_strchr.c \
-				str/ft_strdup.c \
-				str/ft_striteri.c \
-				str/ft_strjoin.c \
-				str/ft_strlcat.c \
-				str/ft_strlcpy.c \
-				str/ft_strlen.c \
-				str/ft_strmapi.c \
-				str/ft_strncmp.c \
-				str/ft_strnstr.c \
-				str/ft_strrchr.c \
-				str/ft_strtrim.c \
-				str/ft_substr.c \
-				str/ft_tolower.c \
-				str/ft_toupper.c \
-				str/ft_remchr.c \
-				str/ft_strreplace.c \
-				str/ft_strsspace.c \
-				str/ft_strsplit.c \
-				str/ft_strinsert.c \
-				str/ft_listinsert.c
 
-SRCS_MATH = 	math/ft_min.c
+SRCS_GNL :=		$(DIR_GNL)/get_next_line.c \
+				$(DIR_GNL)/get_next_line_utils.c
 
-SRCS = 			$(SRCS_READER) \
-				$(SRCS_GNL) \
+
+SRCS_IS :=		$(DIR_IS)/ft_isalnum.c \
+				$(DIR_IS)/ft_isalpha.c \
+				$(DIR_IS)/ft_isascii.c \
+				$(DIR_IS)/ft_isdigit.c \
+				$(DIR_IS)/ft_isprint.c \
+				$(DIR_IS)/ft_isspace.c
+
+
+SRCS_LST :=		$(DIR_LST)/ft_lstadd_back.c \
+				$(DIR_LST)/ft_lstadd_front.c \
+				$(DIR_LST)/ft_lstclear.c \
+				$(DIR_LST)/ft_lstdelone.c \
+				$(DIR_LST)/ft_lstiter.c \
+				$(DIR_LST)/ft_lstlast.c \
+				$(DIR_LST)/ft_lstmap.c \
+				$(DIR_LST)/ft_lstnew.c \
+				$(DIR_LST)/ft_lstsize.c
+
+
+SRCS_MATH :=	$(DIR_MATH)/ft_min.c
+SRCS_MEM :=		$(DIR_MEM)/ft_bzero.c \
+				$(DIR_MEM)/ft_calloc.c \
+				$(DIR_MEM)/ft_memchr.c \
+				$(DIR_MEM)/ft_memcmp.c \
+				$(DIR_MEM)/ft_memcpy.c \
+				$(DIR_MEM)/ft_memmove.c \
+				$(DIR_MEM)/ft_memset.c
+
+
+SRCS_POINTER :=	$(DIR_POINTER)/ft_swap_free.c
+SRCS_PUT :=		$(DIR_PUT)/ft_putchar_fd.c \
+				$(DIR_PUT)/ft_putendl_fd.c \
+				$(DIR_PUT)/ft_putnbr_fd.c \
+				$(DIR_PUT)/ft_putstr_fd.c
+
+
+SRCS_READER := 	$(DIR_READER)/reader.c
+SRCS_STR :=		$(DIR_STR)/ft_atoi.c \
+				$(DIR_STR)/ft_itoa.c \
+				$(DIR_STR)/ft_split.c \
+				$(DIR_STR)/ft_strchr.c \
+				$(DIR_STR)/ft_strdup.c \
+				$(DIR_STR)/ft_striteri.c \
+				$(DIR_STR)/ft_strjoin.c \
+				$(DIR_STR)/ft_strlcat.c \
+				$(DIR_STR)/ft_strlcpy.c \
+				$(DIR_STR)/ft_strlen.c \
+				$(DIR_STR)/ft_strmapi.c \
+				$(DIR_STR)/ft_strncmp.c \
+				$(DIR_STR)/ft_strnstr.c \
+				$(DIR_STR)/ft_strrchr.c \
+				$(DIR_STR)/ft_strtrim.c \
+				$(DIR_STR)/ft_substr.c \
+				$(DIR_STR)/ft_tolower.c \
+				$(DIR_STR)/ft_toupper.c \
+				$(DIR_STR)/ft_remchr.c \
+				$(DIR_STR)/ft_strreplace.c \
+				$(DIR_STR)/ft_strsspace.c \
+				$(DIR_STR)/ft_strsplit.c \
+				$(DIR_STR)/ft_strinsert.c
+
+
+SRCS :=			$(DIR_STRARR)/ft_newstrarrayinsert.c \
+				$(DIR_STRARR)/ft_strarraydup.c \
+				$(DIR_STRARR)/ft_strarrayinsert.c
+
+SRCS := 		$(SRCS_ARRAY) \
 				$(SRCS_PRINTF) \
+				$(SRCS_GNL) \
 				$(SRCS_IS) \
 				$(SRCS_LST) \
+				$(SRCS_MATH) \
 				$(SRCS_MEM) \
+				$(SRCS_POINTER) \
 				$(SRCS_PUT) \
-				$(SRCS_STR) \
-				$(SRCS_MATH)
+				$(SRCS_READER) \
+				$(SRCS_STR)
 
-OBJS = $(SRCS:.c=.o)
+OBJS := $(SRCS:.c=.o)
 
 all: $(NAME)
 

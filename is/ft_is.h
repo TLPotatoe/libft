@@ -6,21 +6,12 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 16:32:08 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:33:27 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:18:12 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_IS_H
 # define FT_IS_H
-
-/**
- * @brief  Checks whether c is an alphanumeric character (a-z, A-Z, 0-9).
- *
- * @param  c  The character to check.
- *
- * @return Non-zero if c is alphanumeric, zero otherwise.
- */
-int	ft_isalnum(int c);
 
 /**
  * @brief  Checks whether c is an alphabetic character (a-z, A-Z).
@@ -30,6 +21,15 @@ int	ft_isalnum(int c);
  * @return Non-zero if c is alphabetic, zero otherwise.
  */
 int	ft_isalpha(int c);
+
+/**
+ * @brief  Checks whether c is an alphanumeric character (a-z, A-Z, 0-9).
+ *
+ * @param  c  The character to check.
+ *
+ * @return Non-zero if c is alphanumeric, zero otherwise.
+ */
+int	ft_isalnum(int c);
 
 /**
  * @brief  Checks whether c is a valid ASCII character (0-127).

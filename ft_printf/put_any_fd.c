@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 17:32:54 by tlamit            #+#    #+#             */
-/*   Updated: 2025/11/21 15:35:41 by tlamit           ###   ########.fr       */
+/*   Updated: 2025/11/21 23:33:08 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	ft_putlongnbr_fd(long int n, int fd, int *i)
 	(*i)++;
 }
 
-void	ft_putstr_fd(char *s, int fd, int *i)
+void	printf_ft_putstr_fd(char *s, int fd, int *i)
 {
 	if (s)
 	{
@@ -62,7 +62,7 @@ void	ft_putstr_fd(char *s, int fd, int *i)
 	}
 }
 
-void	ft_putnbr_fd(int n, int fd, int *i)
+void	printf_ft_putnbr_fd(int n, int fd, int *i)
 {
 	if (n == -2147483648)
 	{
@@ -87,7 +87,7 @@ void	ft_putnbr_fd(int n, int fd, int *i)
 	(*i)++;
 }
 
-void	ft_putchar_fd(char c, int fd, int *i)
+void	printf_ft_putchar_fd(char c, int fd, int *i)
 {
 	write(fd, &c, 1);
 	(*i)++;

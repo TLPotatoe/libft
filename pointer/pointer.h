@@ -6,12 +6,14 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:51:36 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:17:01 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:19:22 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef POINTER_H
 # define POINTER_H
+
+# include <stdlib.h>
 
 /**
  * @brief  Frees the pointer referenced by origin and replaces it with new.

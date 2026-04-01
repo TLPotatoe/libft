@@ -6,9 +6,11 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:43:05 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:16:39 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:19:37 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "pointer.h"
 
 void	ft_swap_free(void **origin, void *new)
 {

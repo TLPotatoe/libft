@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 16:22:04 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:31:53 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:19:03 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_LST_H
 
 # include <unistd.h>
+# include <stdlib.h>
 
 /**
  * @brief  Singly linked list node.

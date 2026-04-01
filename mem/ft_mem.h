@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 16:18:48 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:23:05 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:19:13 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_MEM_H
 
 # include <unistd.h>
+# include <stdlib.h>
 
 /**
  * @brief  Sets n bytes of memory at address s to zero.
