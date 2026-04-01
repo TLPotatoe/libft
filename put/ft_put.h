@@ -13,8 +13,8 @@
 #ifndef FT_PUT_H
 # define FT_PUT_H
 
-#include <unistd.h>
-#include "../str/ft_str.h"
+# include "../str/ft_str.h"
+# include <unistd.h>
 
 /**
  * @brief  Writes a single character to the given file descriptor.

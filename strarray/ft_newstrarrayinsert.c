@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_strarray.h" 
-
+#include "ft_strarray.h"
 
 char	**ft_newstrarrayinsert(char **origin, size_t insert_p, char *str)
 {

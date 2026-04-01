@@ -13,9 +13,9 @@
 #ifndef FT_STRARRAY_H
 # define FT_STRARRAY_H
 
-# include "../str/ft_str.h"
 # include "../array/ft_array.h"
 # include "../pointer/pointer.h"
+# include "../str/ft_str.h"
 # include <unistd.h>
 
 /**
@@ -70,6 +70,7 @@ void	ft_strarrayinsert(char ***origin, size_t insert_p, char *str);
  * @param  n         Maximum number of characters to copy from str.
  * @return void
  */
-void	ft_strarrayninsert(char ***origin, size_t insert_p, char *str, size_t n);
+void	ft_strarrayninsert(char ***origin, size_t insert_p, char *str,
+			size_t n);
 
 #endif // !FT_STRARRAY_H
