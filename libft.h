@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:09:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/03/23 18:30:04 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 13:57:34 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,14 +92,19 @@ char				*ft_strlinsert(char *str, char *to_insert, size_t pos,
 char				*ft_strinsert(char *str, char *to_insert, size_t pos);
 char				*ft_strninsert(char *str, char *to_insert, size_t pos,
 						size_t n);
-char				**ft_listninsert(char **origin, size_t insert_p,
-						char *str, size_t n);
+char				**ft_listninsert(char **origin, size_t insert_p, char *str,
+						size_t n);
 char				*ft_strlinsert(char *str, char *to_insert, size_t pos,
 						size_t len);
 
 void				ft_remchr(char *s, char *char_list);
 void				ft_strreplace(char *source, char *to_replace,
 						char replace_by);
+
+size_t				ft_listlen(char **origin);
+char				**ft_listinsert(char **origin, size_t insert_p, char *str);
+char				**ft_listninsert(char **origin, size_t insert_p, char *str,
+						size_t n);
 
 size_t				ft_min(size_t a, size_t b);
 
