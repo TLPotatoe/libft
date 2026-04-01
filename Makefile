@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/04/01 17:25:06 by tlamit           ###   ########.fr        #
+#    Updated: 2026/04/01 17:54:41 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,7 @@ CC = cc
 
 NAME = libft.a
 
-HEADER = -I. -I get_next_line -I ft_printf -I reader
 
-ifndef DEBUG
-	CFLAGS = -Wall -Wextra -Werror -g $(HEADER)
-else
-	CFLAGS = -g $(HEADER)
-endif
 
 DIR_ARRAY		:= array
 DIR_FTPRINTF	:= ft_printf
@@ -34,6 +28,22 @@ DIR_PUT			:= put
 DIR_READER		:= reader
 DIR_STR			:= str
 DIR_STRARR		:= strarray
+
+HEADER :=	-I . \
+			-I $(DIR_ARRAY) \
+			-I $(DIR_FTPRINTF) \
+			-I $(DIR_GNL) \
+			-I $(DIR_IS) \
+			-I $(DIR_LST) \
+			-I $(DIR_MATH) \
+			-I $(DIR_MATH) \
+			-I $(DIR_MEM) \
+			-I $(DIR_POINTER) \
+			-I $(DIR_PUT) \
+			-I $(DIR_READER) \
+			-I $(DIR_STR) \
+			-I $(DIR_STRARR)
+
 
 SRCS_ARRAY :=	$(DIR_ARRAY)/ft_arraylen.c \
 				$(DIR_ARRAY)/ft_freearray.c
@@ -130,7 +140,14 @@ SRCS := 		$(SRCS_ARRAY) \
 				$(SRCS_READER) \
 				$(SRCS_STR)
 
+
 OBJS := $(SRCS:.c=.o)
+
+ifndef DEBUG
+	CFLAGS := -Wall -Wextra -Werror -g $(HEADER)
+else
+	CFLAGS := -g $(HEADER)
+endif
 
 all: $(NAME)
 

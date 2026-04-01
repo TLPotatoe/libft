@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:51:36 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 17:19:22 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:46:38 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 /**
  * @brief  Frees the pointer referenced by origin and replaces it with new.
  * @param  origin  Address of the pointer to free and reassign.
- * @param  new     New pointer to assign to *origin.
+ * @param  replacement     New pointer to assign to *origin.
  * @return void
  */
-void	ft_swap_free(void **origin, void *new);
+void	ft_swap_free(void **origin, void *replacement);
 
 #endif // !POINTER_H

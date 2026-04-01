@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:09:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:38:41 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/01 17:49:16 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@
 # include "math/ft_math.h"
 # include "mem/ft_mem.h"
 # include "pointer/pointer.h"
-# include "printf/ft_printf.h"
+# include "ft_printf/ft_printf.h"
 # include "put/ft_put.h"
 # include "reader/reader.h"
 # include "str/ft_str.h"
-# include "strarray/strarray.h"
+# include "strarray/ft_strarray.h"
 
 #endif
