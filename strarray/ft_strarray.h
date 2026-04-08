@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:47:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 18:10:37 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/08 16:53:13 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,22 @@
  * @brief  Duplicates a NULL-terminated array of strings.
  *         Allocates a new array and copies each string using ft_strdup.
  *         On allocation failure, frees all previously allocated memory.
- * @param  tabstr  Source array of strings, terminated by a NULL pointer.
+ * @param  strarray Source array of strings, terminated by a NULL pointer.
  * @return Pointer to the newly duplicated array,
  *         or NULL if any memory allocation fails.
  */
-char	**ft_strarraydup(char **tabstr);
+char	**ft_strarraydup(char **strarray);
+
+/**
+ * @brief  Duplicates a NULL-terminated array of n strings.
+ *         Allocates a new array and copies n string using ft_strdup.
+ *         On allocation failure, frees all previously allocated memory.
+ * @param  strarray Source array of strings, terminated by a NULL pointer.
+ * @param  n The maximum number of strings to copy from strarray.
+ * @return Pointer to the newly duplicated array,
+ *         or NULL if any memory allocation fails.
+ */
+char	**ft_strarrayndup(char **strarray, size_t n);
 
 /**
  * @brief Creates a new string array with a duplicated string inserted.
