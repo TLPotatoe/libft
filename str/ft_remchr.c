@@ -6,16 +6,16 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 16:49:00 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/02 16:13:26 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/13 13:31:30 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_str.h"
 
-static size_t always_pos(int i)
+static size_t	always_pos(int i)
 {
 	if (i < 0)
-		i = (i*-1+256);
+		i = (i * -1 + 256);
 	return (i);
 }
 
