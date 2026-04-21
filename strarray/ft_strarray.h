@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:47:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/08 16:53:13 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/21 14:47:59 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,29 +33,28 @@ char	**ft_strarraydup(char **strarray);
  *         Allocates a new array and copies n string using ft_strdup.
  *         On allocation failure, frees all previously allocated memory.
  * @param  strarray Source array of strings, terminated by a NULL pointer.
- * @param  n The maximum number of strings to copy from strarray.
+ * @param  n        The maximum number of strings to copy from strarray.
  * @return Pointer to the newly duplicated array,
  *         or NULL if any memory allocation fails.
  */
 char	**ft_strarrayndup(char **strarray, size_t n);
 
 /**
- * @brief Creates a new string array with a duplicated string inserted.
- * @param origin The original string array. Can be NULL.
- * @param insert_p The index where the string will be inserted.
- * @param str The string to duplicate and insert.
+ * @brief  Creates a new string array with a duplicated string inserted.
+ * @param  origin    The original string array. Can be NULL.
+ * @param  insert_p  The index where the string will be inserted.
+ * @param  str       The string to duplicate and insert.
  * @return A newly allocated string array, or NULL if allocation fails.
  */
 char	**ft_newstrarrayinsert(char **origin, size_t insert_p, char *str);
 
 /**
-
-	* @brief Creates a new string array with a duplicated string
-	(up to n chars) inserted.
- * @param origin The original string array. Can be NULL.
- * @param insert_p The index where the string will be inserted.
- * @param str The string to duplicate and insert.
- * @param n The maximum number of characters to copy from str.
+ * @brief  Creates a new string array with a duplicated string
+ *         (up to n chars) inserted.
+ * @param  origin    The original string array. Can be NULL.
+ * @param  insert_p  The index where the string will be inserted.
+ * @param  str       The string to duplicate and insert.
+ * @param  n         The maximum number of characters to copy from str.
  * @return A newly allocated string array, or NULL if allocation fails.
  */
 char	**ft_newstrarrayninsert(char **origin, size_t insert_p, char *str,
@@ -83,5 +82,27 @@ void	ft_strarrayinsert(char ***origin, size_t insert_p, char *str);
  */
 void	ft_strarrayninsert(char ***origin, size_t insert_p, char *str,
 			size_t n);
+
+/**
+ * @brief  Removes the element at del_p from the string array in-place,
+ *         freeing the string and shifting all subsequent elements left.
+ *         The array pointer is not reallocated; the last slot is set to NULL.
+ * @param  origin  Address of the string array.
+ * @param  del_p   Index of the element to remove.
+ * @return void
+ */
+void	ft_strarraydel(char ***origin, size_t del_p);
+
+/**
+ * @brief  Removes n consecutive elements starting at del_p from the string
+ *         array in-place, freeing each string and shifting remaining elements
+ *         left. The last n slots are set to NULL. If del_p is past the end,
+ *         does nothing. n is clamped so it does not extend past the end.
+ * @param  origin  Address of the string array.
+ * @param  del_p   Index of the first element to remove.
+ * @param  n       Number of consecutive elements to remove.
+ * @return void
+ */
+void	ft_strarrayndel(char ***origin, size_t del_p, size_t n);
 
 #endif // !FT_STRARRAY_H
