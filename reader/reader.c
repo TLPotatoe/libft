@@ -26,14 +26,17 @@ char	*ft_get_raw_file(char *filename)
 	char	*buffer;
 
 	fd = open(filename, O_RDONLY);
-	if (fd < 2)
+	if (fd < 0)
 		return (NULL);
 	line = NULL;
 	while (1)
 	{
 		buffer = malloc(RAW_BUFFER_SIZE + 1);
 		if (!buffer)
+		{
 			free_buff_line(&line, &buffer);
+			return (NULL);
+		}
 		len = read(fd, buffer, RAW_BUFFER_SIZE);
 		if (!len)
 			break ;

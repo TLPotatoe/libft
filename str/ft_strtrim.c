@@ -22,7 +22,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
 	len = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[len]) && len >= 0)
+	while (len >= 0 && ft_strchr(set, s1[len]))
 		len--;
 	p = malloc(len + 2);
 	if (!p)
