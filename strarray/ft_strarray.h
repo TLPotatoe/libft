@@ -83,26 +83,4 @@ void	ft_strarrayinsert(char ***origin, size_t insert_p, char *str);
 void	ft_strarrayninsert(char ***origin, size_t insert_p, char *str,
 			size_t n);
 
-/**
- * @brief  Removes the element at del_p from the string array in-place,
- *         freeing the string and shifting all subsequent elements left.
- *         The array pointer is not reallocated; the last slot is set to NULL.
- * @param  origin  Address of the string array.
- * @param  del_p   Index of the element to remove.
- * @return void
- */
-void	ft_strarraydel(char ***origin, size_t del_p);
-
-/**
- * @brief  Removes n consecutive elements starting at del_p from the string
- *         array in-place, freeing each string and shifting remaining elements
- *         left. The last n slots are set to NULL. If del_p is past the end,
- *         does nothing. n is clamped so it does not extend past the end.
- * @param  origin  Address of the string array.
- * @param  del_p   Index of the first element to remove.
- * @param  n       Number of consecutive elements to remove.
- * @return void
- */
-void	ft_strarrayndel(char ***origin, size_t del_p, size_t n);
-
 #endif // !FT_STRARRAY_H

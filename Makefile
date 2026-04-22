@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/04/21 14:56:32 by tlamit           ###   ########.fr        #
+#    Updated: 2026/04/22 16:17:41 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,8 @@ HEADER :=	-I . \
 			-I $(DIR_STRARR)
 
 
-SRCS_ARRAY :=	$(DIR_ARRAY)/ft_arraylen.c \
+SRCS_ARRAY :=	$(DIR_ARRAY)/ft_arraydel.c \
+				$(DIR_ARRAY)/ft_arraylen.c \
 				$(DIR_ARRAY)/ft_freearray.c
 
 
@@ -103,6 +104,7 @@ SRCS_STR :=		$(DIR_STR)/ft_atoi.c \
 				$(DIR_STR)/ft_split.c \
 				$(DIR_STR)/ft_strchr.c \
 				$(DIR_STR)/ft_strdup.c \
+				$(DIR_STR)/ft_strfajoin.c \
 				$(DIR_STR)/ft_striteri.c \
 				$(DIR_STR)/ft_strjoin.c \
 				$(DIR_STR)/ft_strlcat.c \
@@ -125,8 +127,7 @@ SRCS_STR :=		$(DIR_STR)/ft_atoi.c \
 
 SRCS_STRARR :=	$(DIR_STRARR)/ft_newstrarrayinsert.c \
 				$(DIR_STRARR)/ft_strarraydup.c \
-				$(DIR_STRARR)/ft_strarrayinsert.c \
-				$(DIR_STRARR)/ft_strarraydel.c
+				$(DIR_STRARR)/ft_strarrayinsert.c
 
 SRCS := 		$(SRCS_ARRAY) \
 				$(SRCS_PRINTF) \

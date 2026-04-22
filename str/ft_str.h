@@ -142,6 +142,21 @@ char	*ft_strlinsert(char *str, char *to_insert, size_t pos, size_t len);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 /**
+ * @brief  Concatenates s1 and s2 into a newly allocated string, then
+ *         frees both operands on success. If one operand is NULL, the
+ *         other is returned as-is without being freed; if both are NULL,
+ *         NULL is returned. Intended for accumulator patterns where both
+ *         inputs are heap-allocated.
+ *
+ * @param  s1  The first string (freed on success).
+ * @param  s2  The second string (freed on success).
+ *
+ * @return A newly allocated string containing s1 followed by s2,
+ *         or NULL on allocation failure (operands are left untouched).
+ */
+char	*ft_strfajoin(char *s1, char *s2);
+
+/**
  * @brief  Concatenates two strings into a newly allocated string.
  *
  * @param  s1  The first string.

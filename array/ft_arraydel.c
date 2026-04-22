@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strarraydel.c                                   :+:      :+:    :+:   */
+/*   ft_arraydel.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 14:41:02 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/21 14:53:06 by tlamit           ###   ########.fr       */
+/*   Created: 2026/04/22 16:20:00 by tlamit            #+#    #+#             */
+/*   Updated: 2026/04/22 16:14:17 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_strarray.h"
+#include "../math/ft_math.h"
+#include "ft_array.h"
 
-void	ft_strarraydel(char ***origin, size_t del_p)
+void	ft_arraydel(void ***origin, size_t del_p)
 {
-	ft_strarrayndel(origin, del_p, 1);
+	ft_arrayndel(origin, del_p, 1);
 }
 
-void	ft_strarrayndel(char ***origin, size_t del_p, size_t n)
+void	ft_arrayndel(void ***origin, size_t del_p, size_t n)
 {
 	size_t	i;
 	size_t	len;
 
-	len = ft_arraylen((void **)*origin);
+	len = ft_arraylen(*origin);
 	if (del_p >= len)
 		return ;
 	n = ft_min(n, len - del_p);
