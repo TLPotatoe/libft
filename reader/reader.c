@@ -6,44 +6,49 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:43:22 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 16:05:48 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/22 16:25:00 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "reader.h"
 
-static void	free_buff_line(char **line, char **buff)
+static int	read_chunk(int fd, char **line)
 {
-	free(*line);
-	free(*buff);
+	char	*buffer;
+	int		len;
+
+	buffer = malloc(RAW_BUFFER_SIZE + 1);
+	if (!buffer)
+		return (-1);
+	len = read(fd, buffer, RAW_BUFFER_SIZE);
+	if (len <= 0)
+	{
+		free(buffer);
+		return (0);
+	}
+	buffer[len] = 0;
+	*line = gnl_ft_strjoin(*line, buffer);
+	return (1);
 }
 
 char	*ft_get_raw_file(char *filename)
 {
 	int		fd;
-	int		len;
+	int		status;
 	char	*line;
-	char	*buffer;
 
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
 		return (NULL);
 	line = NULL;
-	while (1)
-	{
-		buffer = malloc(RAW_BUFFER_SIZE + 1);
-		if (!buffer)
-		{
-			free_buff_line(&line, &buffer);
-			return (NULL);
-		}
-		len = read(fd, buffer, RAW_BUFFER_SIZE);
-		if (!len)
-			break ;
-		buffer[len] = 0;
-		line = gnl_ft_strjoin(line, buffer);
-	}
-	free(buffer);
+	status = 1;
+	while (status > 0)
+		status = read_chunk(fd, &line);
 	close(fd);
+	if (status < 0)
+	{
+		free(line);
+		return (NULL);
+	}
 	return (line);
 }
