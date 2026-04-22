@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:47:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/21 14:47:59 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/22 17:05:48 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,15 @@ void	ft_strarrayinsert(char ***origin, size_t insert_p, char *str);
  */
 void	ft_strarrayninsert(char ***origin, size_t insert_p, char *str,
 			size_t n);
+
+/**
+ * @brief  Searches for the first occurrence of a substring within a
+ *         string array.
+ * @param  strarray  The NULL-terminated array of strings to search through.
+ * @param  str       The substring to look for.
+ * @return A pointer to the first occurrence of str within the array,
+ *         or NULL if not found or if either argument is NULL.
+ */
+char	*ft_strarraystr(char **strarray, char *str);
 
 #endif // !FT_STRARRAY_H

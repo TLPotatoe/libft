@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/04/22 16:17:41 by tlamit           ###   ########.fr        #
+#    Updated: 2026/04/22 16:58:16 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -127,7 +127,8 @@ SRCS_STR :=		$(DIR_STR)/ft_atoi.c \
 
 SRCS_STRARR :=	$(DIR_STRARR)/ft_newstrarrayinsert.c \
 				$(DIR_STRARR)/ft_strarraydup.c \
-				$(DIR_STRARR)/ft_strarrayinsert.c
+				$(DIR_STRARR)/ft_strarrayinsert.c \
+				$(DIR_STRARR)/ft_strarraystr.c
 
 SRCS := 		$(SRCS_ARRAY) \
 				$(SRCS_PRINTF) \
