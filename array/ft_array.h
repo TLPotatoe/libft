@@ -6,15 +6,15 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 16:33:53 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 17:17:20 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/04/29 14:52:50 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ARRAY_H
 # define FT_ARRAY_H
 
-# include <unistd.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 /**
  * @brief Calculates the length of a NULL-terminated pointers array.
@@ -25,12 +25,14 @@ size_t	ft_arraylen(void **origin);
 
 /**
  * @brief  Frees a NULL-terminated array of pointers and the array itself.
- *         Iterates through each element, frees it,
-	then frees the array pointer.
- * @param  array  Array of pointers to free, terminated by a NULL pointer.
- * @return void
+ * Iterates through each element, frees it, and then frees
+ * the array pointer.
+ * @param  array  The NULL-terminated array of pointers to be freed.
+ * @return Always returns NULL. Assigning the result back to the array
+ * (e.g., array = ft_free_array(array)) is recommended to prevent
+ * double-free errors.
  */
-void	ft_free_array(void **array);
+void	*ft_free_array(void **array);
 
 /**
  * @brief  Removes the element at del_p from a NULL-terminated array of
