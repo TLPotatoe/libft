@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:53:51 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 17:22:40 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/05/07 15:30:35 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 # define FT_STR_H
 
 # include "../is/ft_is.h"
-# include "../mem/ft_mem.h"
 # include "../math/ft_math.h"
-# include <unistd.h>
+# include "../mem/ft_mem.h"
 # include <stdlib.h>
+# include <unistd.h>
 
 /**
  * @brief  Converts a string to an integer.
@@ -211,6 +211,16 @@ size_t	ft_strlen(const char *s);
  * @return A newly allocated transformed string, or NULL on failure.
  */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+/**
+ * @brief  Compares characters of two strings lexicographically.
+ *
+ * @param  s1  The first string.
+ * @param  s2  The second string.
+ *
+ * @return Negative if s1 < s2, zero if equal, positive if s1 > s2.
+ */
+int		ft_strcmp(const char *s1, const char *s2);
 
 /**
  * @brief  Compares up to n characters of two strings lexicographically.
