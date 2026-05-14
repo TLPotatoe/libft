@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/05/07 15:35:52 by tlamit           ###   ########.fr        #
+#    Updated: 2026/05/14 15:39:20 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -148,9 +148,9 @@ SRCS := 		$(SRCS_ARRAY) \
 OBJS := $(SRCS:.c=.o)
 
 ifndef DEBUG
-	CFLAGS := -Wall -Wextra -Werror -g $(HEADER)
+	CFLAGS := -Wall -Wextra -Werror -g -fno-builtin $(HEADER)
 else
-	CFLAGS := -g $(HEADER)
+	CFLAGS := -g -fno-builtin $(HEADER)
 endif
 
 all: $(NAME)
