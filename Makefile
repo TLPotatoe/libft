@@ -6,7 +6,7 @@
 #    By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 14:16:18 by fmurat--          #+#    #+#              #
-#    Updated: 2026/05/14 15:39:20 by tlamit           ###   ########.fr        #
+#    Updated: 2026/07/27 17:00:35 by tlamit           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -115,6 +115,7 @@ SRCS_STR :=		$(DIR_STR)/ft_atoi.c \
 				$(DIR_STR)/ft_strncmp.c \
 				$(DIR_STR)/ft_strnstr.c \
 				$(DIR_STR)/ft_strrchr.c \
+				$(DIR_STR)/ft_strtok.c \
 				$(DIR_STR)/ft_strtrim.c \
 				$(DIR_STR)/ft_substr.c \
 				$(DIR_STR)/ft_tolower.c \

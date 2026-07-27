@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 14:43:35 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/01 18:17:00 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/07/27 16:59:15 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 # define READER_H
 
 # include "../get_next_line/get_next_line.h"
-# include <unistd.h>
-# include <stdlib.h>
 # include <fcntl.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 # ifndef RAW_BUFFER_SIZE
 #  define RAW_BUFFER_SIZE 1024

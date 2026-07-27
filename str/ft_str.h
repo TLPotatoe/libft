@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:53:51 by tlamit            #+#    #+#             */
-/*   Updated: 2026/05/07 15:30:35 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/07/27 16:59:54 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -287,6 +287,31 @@ char	**ft_strsplit(char const *s, char *str);
  * @return The number of whitespace characters skipped.
  */
 size_t	ft_strsspace(char **str);
+
+/**
+ * @brief  Splits an in-memory string into successive tokens delimited by c,
+ *         consuming *str as it goes.
+ *
+ *         Unlike the standard strtok, this keeps c at the end of the
+ *         returned token (when one was found) and takes the string to
+ *         tokenize by address instead of relying on static state, so
+ *         several strings can safely be tokenized at the same time.
+ *         Call it repeatedly on the same *str until it returns NULL to
+ *         extract every token.
+ *
+ * @param  str  Address of the string to tokenize. Updated in place to
+ *              hold the remaining, unconsumed content (or NULL once
+ *              exhausted). The string must have been allocated with
+ *              malloc, as it is freed/reallocated internally on every
+ *              call.
+ * @param  c    Delimiter character marking the end of a token.
+ *
+ * @return A newly allocated string containing the next token (including
+ *         c if one was found before the end of *str), or NULL if *str
+ *         is NULL/empty (nothing left to tokenize) or an allocation
+ *         fails.
+ */
+char	*ft_strtok(char **str, char c);
 
 /**
  * @brief  Trims all leading and trailing characters found in set from s1
