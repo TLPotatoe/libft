@@ -130,6 +130,7 @@ SRCS_STR :=		$(DIR_STR)/ft_atoi.c \
 SRCS_STRARR :=	$(DIR_STRARR)/ft_newstrarrayinsert.c \
 				$(DIR_STRARR)/ft_strarraydup.c \
 				$(DIR_STRARR)/ft_strarrayinsert.c \
+				$(DIR_STRARR)/ft_strarrayprint.c \
 				$(DIR_STRARR)/ft_strarraystr.c
 
 SRCS := 		$(SRCS_ARRAY) \

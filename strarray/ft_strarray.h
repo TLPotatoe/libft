@@ -6,7 +6,7 @@
 /*   By: tlamit <titouan.lamit@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/01 15:47:55 by tlamit            #+#    #+#             */
-/*   Updated: 2026/04/22 17:05:48 by tlamit           ###   ########.fr       */
+/*   Updated: 2026/07/28 15:30:44 by tlamit           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,18 @@ void	ft_strarrayinsert(char ***origin, size_t insert_p, char *str);
  */
 void	ft_strarrayninsert(char ***origin, size_t insert_p, char *str,
 			size_t n);
+
+/**
+ * @brief  Prints each string of a NULL-terminated string array on its own
+ *         line. Empty strings are printed as "Empty > <pointer>" instead
+ *         of a blank line.
+ *
+ * @param  array  The NULL-terminated array of strings to print. If NULL,
+ *                the function does nothing.
+ *
+ * @return void
+ */
+void	ft_strarrayprint(char **array);
 
 /**
  * @brief  Searches for the first occurrence of a substring within a
